@@ -18,22 +18,6 @@
 
 ---
 
-# \*\*Repo Name\*\*
-
-\*\*Repo description\*\*
-
-## Overview
-
-\*\*Describe what the software does.\*\*
-
-## Features
-
-\*\*Describe the key features, if necessary.\*\*
-
-## Getting started
-
-\*\*Describe how to use the software.\*\*
-
 ## Contribute
 
 We would love to see you contribute to RudderStack. Get more information on how to contribute [**here**](CONTRIBUTING.md).
