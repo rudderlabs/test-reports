@@ -1,0 +1,19 @@
+[
+  {
+    "metadata": {
+      "secret": {
+        "accessToken": "commonAccessToken"
+      }
+    },
+    "statusCode": 400,
+    "error": "Payload could not be populated",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "instrumentation",
+      "destType": "CRITEO_AUDIENCE",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor"
+    }
+  }
+]
