@@ -1,0 +1,23 @@
+[
+  {
+    "metadata": {
+      "destinationId": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+      "destinationType": "SLACK",
+      "sourceId": "1YhwKyDcKstudlGxkeN5p2wgsrp",
+      "anonymousId": "4de817fb-7f8e-4e23-b9be-f6736dbda20f",
+      "jobId": 126,
+      "messageId": "9ecc0183-89ed-48bd-87eb-b2d8e1ca6780"
+    },
+    "statusCode": 400,
+    "error": "Event type page is not supported",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "instrumentation",
+      "destType": "SLACK",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor",
+      "destinationId": "1ZQVSU9SXNg6KYgZALaqjAO3PIL"
+    }
+  }
+]
