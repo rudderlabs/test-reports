@@ -1,0 +1,118 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "destination": {
+        "ID": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+        "Name": "test-slack",
+        "DestinationDefinition": {
+          "ID": "1ZQUiJVMlmF7lfsdfXg7KXQnlLV",
+          "Name": "SLACK",
+          "DisplayName": "Slack",
+          "Config": {
+            "excludeKeys": [],
+            "includeKeys": []
+          }
+        },
+        "Enabled": true,
+        "Transformations": [],
+        "IsProcessorEnabled": true,
+        "Config": {
+          "eventChannelSettings": [
+            {
+              "eventChannelWebhook": "https://hooks.slack.com/services/example/test/demo",
+              "eventName": "is",
+              "eventRegex": true
+            }
+          ],
+          "eventTemplateSettings": [
+            {
+              "eventName": "is",
+              "eventRegex": true,
+              "eventTemplate": "{{name}} performed {{event}} with {{properties.key1}} {{properties.key2}}"
+            },
+            {
+              "eventName": "",
+              "eventRegex": false,
+              "eventTemplate": ""
+            }
+          ],
+          "webhookUrl": "https://hooks.slack.com/services/THZM86VSS/BV9HZ2UN6/demo",
+          "whitelistedTraitsSettings": [
+            {
+              "trait": "hiji"
+            },
+            {
+              "trait": "favorite color"
+            }
+          ]
+        }
+      },
+      "message": {
+        "anonymousId": "4de817fb-7f8e-4e23-b9be-f6736dbda20f",
+        "channel": "web",
+        "context": {
+          "app": {
+            "build": "1.0.0",
+            "name": "RudderLabs JavaScript SDK",
+            "namespace": "com.rudderlabs.javascript",
+            "version": "1.1.1-rc.1"
+          },
+          "library": {
+            "name": "RudderLabs JavaScript SDK",
+            "version": "1.1.1-rc.1"
+          },
+          "locale": "en-US",
+          "os": {
+            "name": "",
+            "version": ""
+          },
+          "page": {
+            "path": "/tests/html/script-test.html",
+            "referrer": "http://localhost:1111/tests/html/",
+            "search": "",
+            "title": "",
+            "url": "http://localhost:1111/tests/html/script-test.html"
+          },
+          "screen": {
+            "density": 1.7999999523162842
+          },
+          "traits": {
+            "country": "India",
+            "email": "name@domain.com",
+            "hiji": "hulala",
+            "name": "my-name",
+            "favorite color": "black"
+          },
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+        },
+        "integrations": {
+          "All": true
+        },
+        "messageId": "9ecc0183-89ed-48bd-87eb-b2d8e1ca6780",
+        "originalTimestamp": "2020-03-23T03:46:30.916Z",
+        "properties": {
+          "path": "/tests/html/script-test.html",
+          "referrer": "http://localhost:1111/tests/html/",
+          "search": "",
+          "title": "",
+          "url": "http://localhost:1111/tests/html/script-test.html"
+        },
+        "receivedAt": "2020-03-23T09:16:31.041+05:30",
+        "request_ip": "[::1]:52056",
+        "sentAt": "2020-03-23T03:46:30.916Z",
+        "timestamp": "2020-03-23T09:16:31.041+05:30",
+        "type": "identify",
+        "userId": "12345"
+      },
+      "metadata": {
+        "destinationId": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+        "destinationType": "SLACK",
+        "sourceId": "1YhwKyDcKstudlGxkeN5p2wgsrp",
+        "anonymousId": "4de817fb-7f8e-4e23-b9be-f6736dbda20f",
+        "jobId": 126,
+        "messageId": "9ecc0183-89ed-48bd-87eb-b2d8e1ca6780"
+      }
+    }
+  ]
+}
