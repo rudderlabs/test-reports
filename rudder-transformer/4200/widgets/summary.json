@@ -1,5 +1,0 @@
-<<<<<<<< Updated upstream:rudder-transformer/4299/widgets/summary.json
-{"reportName":"Allure Report","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":2,"passed":3715,"unknown":0,"total":3717},"time":{"start":1746519355499,"stop":1746519604894,"duration":249395,"minDuration":0,"maxDuration":304,"sumDuration":36165}}
-========
-{"reportName":"Allure Report","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":2,"passed":3715,"unknown":0,"total":3717},"time":{"start":1746519402627,"stop":1746519646624,"duration":243997,"minDuration":0,"maxDuration":315,"sumDuration":33994}}
->>>>>>>> Stashed changes:rudder-transformer/4200/widgets/summary.json
