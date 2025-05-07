@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "Either email or userId is required for track call.: Workflow: procWorkflow, Step: validateTrackEvent, ChildStep: undefined, OriginalError: Either email or userId is required for track call.",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "instrumentation",
+      "implementation": "cdkV2",
+      "destType": "LOOPS",
+      "module": "destination",
+      "feature": "processor",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
