@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "message type group is not supported: Workflow: procWorkflow, Step: validateInput, ChildStep: undefined, OriginalError: message type group is not supported",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "instrumentation",
+      "implementation": "cdkV2",
+      "destType": "LOOPS",
+      "module": "destination",
+      "feature": "processor",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
