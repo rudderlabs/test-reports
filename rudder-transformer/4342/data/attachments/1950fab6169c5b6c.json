@@ -1,0 +1,78 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://business-api.tiktok.com/open_api/v1.3/pixel/track/",
+      "headers": {
+        "Access-Token": "dummyAccessToken",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "pixel_code": "{{PIXEL-CODE}}",
+          "event": "SubmitForm",
+          "event_id": "16163186328257",
+          "timestamp": "2020-09-17T19:49:27Z",
+          "context": {
+            "page": {
+              "url": "http://demo.mywebsite.com/purchase",
+              "referrer": "http://demo.mywebsite.com"
+            },
+            "user": {
+              "phone_number": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+              "email": "dd6ff77f54e2106661089bae4d40cdb600979bf7edc9eb65c0942ba55c7c2d7f",
+              "external_id": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc"
+            },
+            "ip": "13.57.97.131",
+            "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion"
+          },
+          "partner_name": "RudderStack"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "sourceId": "default-source",
+      "workspaceId": "default-workspace",
+      "namespace": "default-namespace",
+      "instanceId": "default-instance",
+      "sourceType": "default-source-type",
+      "sourceCategory": "default-category",
+      "trackingPlanId": "default-tracking-plan",
+      "trackingPlanVersion": 1,
+      "sourceTpConfig": {},
+      "mergedTpConfig": {},
+      "destinationId": "default-destination",
+      "jobRunId": "default-job-run",
+      "jobId": 1,
+      "sourceBatchId": "default-batch",
+      "sourceJobId": "default-source-job",
+      "sourceJobRunId": "default-source-job-run",
+      "sourceTaskId": "default-task",
+      "sourceTaskRunId": "default-task-run",
+      "recordId": {},
+      "destinationType": "default-destination-type",
+      "messageId": "default-message-id",
+      "oauthAccessToken": "default-token",
+      "messageIds": [
+        "default-message-id"
+      ],
+      "rudderId": "default-rudder-id",
+      "receivedAt": "2025-05-21T07:35:35.801Z",
+      "eventName": "default-event",
+      "eventType": "default-type",
+      "sourceDefinitionId": "default-source-def",
+      "destinationDefinitionId": "default-dest-def",
+      "transformationId": "default-transform",
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]

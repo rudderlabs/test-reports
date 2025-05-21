@@ -1,0 +1,97 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://business-api.tiktok.com/open_api/v1.3/pixel/track/",
+      "headers": {
+        "Access-Token": "dummyAccessToken",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "pixel_code": "{{PIXEL-CODE}}",
+          "event": "Subscribe",
+          "event_id": "1616318632825_357",
+          "timestamp": "2020-09-17T19:49:27Z",
+          "test_event_code": "TEST0000000011",
+          "properties": {
+            "contents": [
+              {
+                "price": 8,
+                "quantity": 2,
+                "content_type": "socks",
+                "content_id": "1077218"
+              },
+              {
+                "price": 30,
+                "quantity": 1,
+                "content_type": "dress",
+                "content_id": "1197218"
+              }
+            ],
+            "currency": "USD",
+            "value": 46
+          },
+          "context": {
+            "page": {
+              "url": "http://demo.mywebsite.com/purchase",
+              "referrer": "http://demo.mywebsite.com"
+            },
+            "user": {
+              "phone_number": "241102c24fa8a642e3d1346a31fbce3dd312563c015ae577a2253cb8652581eb",
+              "email": "a344da1fac6201ed1c1f20a07e1b55bb896a5ac0abd269c1e9daf1afbbffca3b",
+              "external_id": "f0f3ec74bbef8580d7de80624dea93c05d828c748715199fe71bc7f5a67aa8b3"
+            },
+            "ip": "13.57.97.131",
+            "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion"
+          },
+          "partner_name": "RudderStack"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "sourceId": "default-source",
+      "workspaceId": "default-workspace",
+      "namespace": "default-namespace",
+      "instanceId": "default-instance",
+      "sourceType": "default-source-type",
+      "sourceCategory": "default-category",
+      "trackingPlanId": "default-tracking-plan",
+      "trackingPlanVersion": 1,
+      "sourceTpConfig": {},
+      "mergedTpConfig": {},
+      "destinationId": "default-destination",
+      "jobRunId": "default-job-run",
+      "jobId": 1,
+      "sourceBatchId": "default-batch",
+      "sourceJobId": "default-source-job",
+      "sourceJobRunId": "default-source-job-run",
+      "sourceTaskId": "default-task",
+      "sourceTaskRunId": "default-task-run",
+      "recordId": {},
+      "destinationType": "default-destination-type",
+      "messageId": "default-message-id",
+      "oauthAccessToken": "default-token",
+      "messageIds": [
+        "default-message-id"
+      ],
+      "rudderId": "default-rudder-id",
+      "receivedAt": "2025-05-21T07:35:35.801Z",
+      "eventName": "default-event",
+      "eventType": "default-type",
+      "sourceDefinitionId": "default-source-def",
+      "destinationDefinitionId": "default-dest-def",
+      "transformationId": "default-transform",
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]

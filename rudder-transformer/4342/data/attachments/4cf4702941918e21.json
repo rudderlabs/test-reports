@@ -1,0 +1,93 @@
+{
+  "output": [
+    {
+      "batchedRequest": [
+        {
+          "version": "1",
+          "type": "REST",
+          "method": "POST",
+          "endpoint": "https://business-api.tiktok.com/open_api/v1.3/pixel/track/",
+          "headers": {
+            "Access-Token": "dummyAccessToken",
+            "Content-Type": "application/json"
+          },
+          "params": {},
+          "body": {
+            "JSON": {
+              "pixel_code": "dummyPixelCode",
+              "event": "AddToWishlist",
+              "event_id": "1616318632825_357",
+              "timestamp": "2020-09-17T19:49:27Z",
+              "test_event_code": "sample rudder test_event_code",
+              "properties": {
+                "contents": [
+                  {
+                    "price": 8,
+                    "quantity": 2,
+                    "content_type": "socks",
+                    "content_id": "1077218"
+                  },
+                  {
+                    "price": 30,
+                    "quantity": 1,
+                    "content_type": "dress",
+                    "content_id": "1197218"
+                  }
+                ],
+                "currency": "USD",
+                "value": 46
+              },
+              "context": {
+                "page": {
+                  "url": "http://demo.mywebsite.com/purchase",
+                  "referrer": "http://demo.mywebsite.com"
+                },
+                "user": {
+                  "phone_number": "4443dd476f2be18201447ef046731c1a715accee4edc5192641a3b4c3ba921c7",
+                  "email": "774efc08cebab8c50c0f0eb2d3a2d2e560872a64f6c1617314c4f03b1c3d4dfa",
+                  "external_id": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+                },
+                "ip": "13.57.97.131",
+                "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion"
+              },
+              "partner_name": "RudderStack"
+            },
+            "JSON_ARRAY": {},
+            "XML": {},
+            "FORM": {}
+          },
+          "files": {}
+        }
+      ],
+      "metadata": [
+        {
+          "jobId": 3,
+          "userId": "u1"
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "ID": "123",
+        "Name": "tiktok_ads",
+        "DestinationDefinition": {
+          "ID": "123",
+          "Name": "tiktok_ads",
+          "DisplayName": "tiktok_ads",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "123",
+        "Transformations": [],
+        "RevisionID": "123",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "accessToken": "dummyAccessToken",
+          "pixelCode": "dummyPixelCode",
+          "hashUserProperties": true
+        }
+      }
+    }
+  ]
+}
