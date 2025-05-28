@@ -1,0 +1,14 @@
+{
+  "body": [
+    {
+      "request": {
+        "body": "{\"token\":\"Jhj5dZrVaK7ZwHHjRyZWjbDl\",\"challenge\":\"3eZbrw1aB10FEMAGAZd4FyFQ\",\"type\":\"url_verification\"}"
+      },
+      "source": {}
+    }
+  ],
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
