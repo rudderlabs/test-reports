@@ -1,0 +1,94 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "destination": {
+        "ID": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+        "Name": "test-slack",
+        "DestinationDefinition": {
+          "ID": "1ZQUiJVMlmF7lfsdfXg7KXQnlLV",
+          "Name": "SLACK",
+          "DisplayName": "Slack",
+          "Config": {
+            "excludeKeys": [],
+            "includeKeys": []
+          }
+        },
+        "Enabled": true,
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id",
+        "IsProcessorEnabled": true,
+        "Config": {
+          "eventChannelSettings": [
+            {
+              "eventChannelWebhook": "https://hooks.slack.com/services/example/test/demo",
+              "eventName": "is",
+              "eventRegex": true
+            }
+          ],
+          "eventTemplateSettings": [
+            {
+              "eventName": "is",
+              "eventRegex": true,
+              "eventTemplate": "{{name}} performed {{event}} with {{properties.key1}} {{properties.key2}}"
+            },
+            {
+              "eventName": "",
+              "eventRegex": false,
+              "eventTemplate": ""
+            }
+          ],
+          "webhookUrl": "https://hooks.slack.com/services/THZM86VSS/BV9HZ2UN6/demo",
+          "whitelistedTraitsSettings": [
+            {
+              "trait": "hiji"
+            }
+          ],
+          "identifyTemplate": "Hello {{name}}{{newline}}Your traits: name: {{name}} and role: {{role}}"
+        }
+      },
+      "message": {
+        "anonymousId": "4de817fb-7f8e-4e23-b9be-f6736dbda20f",
+        "channel": "web",
+        "context": {
+          "traits": {
+            "name": "Jane Doe",
+            "role": "Developer"
+          }
+        },
+        "integrations": {
+          "All": true
+        },
+        "messageId": "9ecc0183-89ed-48bd-87eb-b2d8e1ca6780",
+        "originalTimestamp": "2020-03-23T03:46:30.916Z",
+        "properties": {
+          "path": "/tests/html/script-test.html",
+          "referrer": "http://localhost:1111/tests/html/",
+          "search": "",
+          "title": "",
+          "url": "http://localhost:1111/tests/html/script-test.html"
+        },
+        "receivedAt": "2020-03-23T09:16:31.041+05:30",
+        "request_ip": "[::1]:52056",
+        "sentAt": "2020-03-23T03:46:30.916Z",
+        "timestamp": "2020-03-23T09:16:31.041+05:30",
+        "type": "identify",
+        "userId": "12345"
+      },
+      "metadata": {
+        "jobId": 777,
+        "attemptNum": 1,
+        "userId": "12345",
+        "sourceId": "1YhwKyDcKstudlGxkeN5p2wgsrp",
+        "destinationId": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false,
+        "messageId": "9ecc0183-89ed-48bd-87eb-b2d8e1ca6780",
+        "destinationType": "SLACK"
+      }
+    }
+  ]
+}
