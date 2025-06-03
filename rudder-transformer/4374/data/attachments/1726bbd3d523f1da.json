@@ -1,0 +1,47 @@
+{
+  "output": [
+    {
+      "metadata": [
+        {
+          "jobId": 3,
+          "attemptNum": 1,
+          "userId": "u3",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 400,
+      "error": "Message type \"track\" is not supported. Only 'record' type is supported.",
+      "statTags": {
+        "errorCategory": "dataValidation",
+        "errorType": "instrumentation",
+        "destType": "RUDDER_TEST",
+        "module": "destination",
+        "implementation": "native",
+        "feature": "router",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId"
+      },
+      "destination": {
+        "Config": {},
+        "DestinationDefinition": {
+          "DisplayName": "Rudder Test",
+          "ID": "123",
+          "Name": "RUDDER_TEST",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "123",
+        "Name": "RUDDER_TEST",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
