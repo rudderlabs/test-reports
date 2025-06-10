@@ -1,0 +1,48 @@
+{
+  "output": [
+    {
+      "metadata": [
+        {
+          "jobId": 101,
+          "attemptNum": 1,
+          "userId": "u101",
+          "sourceId": "test-source-id",
+          "destinationId": "static-123",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "statusCode": 500,
+      "destination": {
+        "Config": {
+          "apiKey": "static-api-key",
+          "endpoint": "https://static.endpoint.com",
+          "staticValue": "static-value"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Rudder Test",
+          "ID": "static-123",
+          "Name": "RUDDER_TEST",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "static-123",
+        "Name": "RUDDER_TEST",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id",
+        "hasDynamicConfig": false
+      },
+      "batched": false,
+      "error": {
+        "sample": {},
+        "inverse": false
+      },
+      "statTags": {
+        "inverse": false
+      }
+    }
+  ]
+}
