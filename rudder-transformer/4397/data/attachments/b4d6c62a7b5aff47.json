@@ -1,0 +1,70 @@
+{
+  "body": {
+    "input": [
+      {
+        "message": {
+          "type": "record",
+          "action": "insert",
+          "fields": {
+            "email": "test@example.com",
+            "name": "Test User"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "messageId": "msg123",
+          "timestamp": "2023-01-01T00:00:00.000Z",
+          "context": {
+            "endpoint": "https://custom.endpoint.com",
+            "sources": {
+              "job_id": "job123",
+              "version": "1.0",
+              "job_run_id": "run123",
+              "task_run_id": "task123"
+            },
+            "testBehavior": {
+              "statusCode": 200
+            }
+          },
+          "traits": {
+            "appId": "custom-app-id"
+          }
+        },
+        "metadata": {
+          "jobId": 4,
+          "attemptNum": 1,
+          "userId": "u4",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        },
+        "destination": {
+          "Config": {
+            "apiKey": "{{ message.traits.appId || \"default-api-key\" }}",
+            "endpoint": "{{ message.context.endpoint || \"https://default.endpoint.com\" }}",
+            "staticValue": "static-value"
+          },
+          "DestinationDefinition": {
+            "DisplayName": "Rudder Test",
+            "ID": "dynamic-123",
+            "Name": "RUDDER_TEST",
+            "Config": {}
+          },
+          "Enabled": true,
+          "ID": "dynamic-123",
+          "Name": "RUDDER_TEST",
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id",
+          "hasDynamicConfig": true
+        }
+      }
+    ],
+    "destType": "rudder_test"
+  },
+  "method": "POST"
+}
