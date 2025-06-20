@@ -1,0 +1,54 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "type": "track",
+        "sentAt": "2021-01-03T17:02:53.195Z",
+        "userId": "dummy-user001",
+        "event": "signup",
+        "properties": {
+          "subscriptionStatus": "trial",
+          "plan": null
+        },
+        "rudderId": "rhl68b3AEvqp4VtLSXBT1FgGEvDBhCBqZuDC",
+        "messageId": "OkMCt52WXJu8oFCE9aLVPOy5mC3TqgSFa20U",
+        "context": {
+          "traits": {}
+        },
+        "anonymousId": "default-anonymousId",
+        "originalTimestamp": "2021-01-03T17:02:53.193Z"
+      },
+      "destination": {
+        "ID": "loops-destination-id",
+        "Name": "LOOPS",
+        "DestinationDefinition": {
+          "ID": "123",
+          "Name": "LOOPS",
+          "DisplayName": "Loops",
+          "Config": {
+            "cdkV2Enabled": true
+          }
+        },
+        "Config": {
+          "apiKey": "loops1"
+        },
+        "Enabled": true,
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      },
+      "metadata": {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      }
+    }
+  ]
+}
