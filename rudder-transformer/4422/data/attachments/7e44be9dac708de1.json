@@ -1,0 +1,23 @@
+{
+  "output": {
+    "status": 400,
+    "message": "Bad Request - Invalid data format",
+    "destinationResponse": {
+      "response": {
+        "success": true,
+        "message": "Request processed successfully"
+      },
+      "status": 200
+    },
+    "statTags": {
+      "errorCategory": "network",
+      "errorType": "aborted",
+      "destType": "RUDDER_TEST",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "dataDelivery",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+}
