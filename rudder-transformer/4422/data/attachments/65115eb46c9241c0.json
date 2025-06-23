@@ -1,0 +1,48 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://test.rudderstack.com/v1/record",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "debug@example.com",
+            "name": "Debug User",
+            "debugTest": true
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z",
+          "debugMode": true
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 2,
+      "attemptNum": 1,
+      "userId": "env-debug-test",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
