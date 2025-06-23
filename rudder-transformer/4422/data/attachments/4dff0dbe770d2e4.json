@@ -1,0 +1,43 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://analytex.userpilot.io/v1/companies/identify",
+      "headers": {
+        "Authorization": "Token userpilot1",
+        "Content-Type": "application/json",
+        "X-API-Version": "2020-09-22"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "company_id": "sample_group_id",
+          "metadata": {
+            "name": "Apple Inc.",
+            "location": "USA"
+          }
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
