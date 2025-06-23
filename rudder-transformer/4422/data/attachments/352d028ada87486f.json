@@ -1,0 +1,47 @@
+{
+  "body": {
+    "version": "v0",
+    "type": "REST",
+    "userId": "default-userId",
+    "method": "POST",
+    "endpoint": "https://test.rudderstack.com/v1/record",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-API-Key": "test-api-key"
+    },
+    "params": {},
+    "body": {
+      "JSON": {
+        "action": "upsert",
+        "fields": {
+          "name": "Test User"
+        },
+        "identifiers": {
+          "userId": "user123"
+        },
+        "testBehavior": {
+          "statusCode": 429,
+          "errorMessage": "Too many requests - rate limit exceeded"
+        }
+      },
+      "JSON_ARRAY": {},
+      "XML": {},
+      "FORM": {}
+    },
+    "files": {},
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "sourceId": "default-sourceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "destinationConfig": {}
+  },
+  "method": "POST"
+}
