@@ -1,0 +1,61 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "type": "record",
+        "action": "insert",
+        "fields": {
+          "email": "cdkv2@example.com",
+          "name": "CDK v2 User",
+          "testType": "cdkv2-basic"
+        },
+        "identifiers": {
+          "userId": "user123"
+        },
+        "recordId": "record123",
+        "messageId": "msg123",
+        "timestamp": "2023-01-01T00:00:00.000Z",
+        "context": {
+          "sources": {
+            "job_id": "job123",
+            "version": "1.0",
+            "job_run_id": "run123",
+            "task_run_id": "task123"
+          },
+          "testBehavior": {
+            "statusCode": 200
+          }
+        }
+      },
+      "metadata": {
+        "jobId": 500,
+        "attemptNum": 1,
+        "userId": "cdkv2-basic",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      },
+      "destination": {
+        "Config": {},
+        "DestinationDefinition": {
+          "DisplayName": "Rudder Test",
+          "ID": "123-v2",
+          "Name": "RUDDER_TEST",
+          "Config": {
+            "cdkV2Enabled": true
+          }
+        },
+        "Enabled": true,
+        "ID": "123-v2",
+        "Name": "RUDDER_TEST",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
