@@ -1,0 +1,16 @@
+{
+  "output": {
+    "status": 200,
+    "message": "Request for RUDDER_TEST Processed Successfully",
+    "destinationResponse": {
+      "response": {
+        "message": "Mock response for RUDDER_TEST",
+        "recordId": "rec123",
+        "timestamp": {
+          "inverse": false
+        }
+      },
+      "status": 200
+    }
+  }
+}

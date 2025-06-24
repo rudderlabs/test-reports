@@ -1,0 +1,27 @@
+[
+  {
+    "metadata": {
+      "jobId": 503,
+      "attemptNum": 1,
+      "userId": "cdkv2-mutation",
+      "sourceId": "test-source-id",
+      "destinationId": "static-123-v2",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 500,
+    "error": "Cannot add property mutatedByTest, object is not extensible: Workflow: procWorkflow, Step: processEvent, ChildStep: undefined, OriginalError: Cannot add property mutatedByTest, object is not extensible",
+    "statTags": {
+      "errorCategory": "transformation",
+      "destType": "RUDDER_TEST",
+      "module": "destination",
+      "implementation": "cdkV2",
+      "feature": "processor",
+      "destinationId": "static-123-v2",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
