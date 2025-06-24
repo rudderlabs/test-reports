@@ -1,0 +1,22 @@
+{
+  "output": {
+    "status": 500,
+    "message": "Internal server error - please retry",
+    "destinationResponse": {
+      "response": {
+        "error": "Internal server error - please retry"
+      },
+      "status": 500
+    },
+    "statTags": {
+      "errorCategory": "network",
+      "errorType": "retryable",
+      "destType": "RUDDER_TEST",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "dataDelivery",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+}

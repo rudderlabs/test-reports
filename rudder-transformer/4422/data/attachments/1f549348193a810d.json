@@ -1,0 +1,47 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://test.rudderstack.com/v1/record",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "cdkv2@example.com",
+            "name": "CDK v2 User",
+            "testType": "cdkv2-basic"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 500,
+      "attemptNum": 1,
+      "userId": "cdkv2-basic",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]

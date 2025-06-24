@@ -1,0 +1,30 @@
+[
+  {
+    "statusCode": 500,
+    "metadata": {
+      "jobId": 503,
+      "attemptNum": 1,
+      "userId": "cdkv2-mutation",
+      "sourceId": "test-source-id",
+      "destinationId": "static-123-v2",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "error": {
+      "sample": {},
+      "inverse": false
+    },
+    "statTags": {
+      "destType": "RUDDER_TEST",
+      "destinationId": "static-123-v2",
+      "errorCategory": "transformation",
+      "feature": "processor",
+      "implementation": "cdkV2",
+      "module": "destination",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
