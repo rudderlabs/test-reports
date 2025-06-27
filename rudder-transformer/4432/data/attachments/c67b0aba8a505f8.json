@@ -1,0 +1,93 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "messageId": "ec5481b6-a926-4d2e-b293-0b3a77c4d3be",
+        "originalTimestamp": "2022-04-22T10:57:58Z",
+        "anonymousId": "ea5cfab2-3961-4d8a-8187-3d1858c99090",
+        "context": {
+          "traits": {
+            "email": "test@email.com",
+            "phone": "+91 2111111 "
+          },
+          "app": {
+            "build": "1.0.0",
+            "name": "RudderLabs JavaScript SDK",
+            "namespace": "com.rudderlabs.javascript",
+            "version": "1.0.0"
+          },
+          "device": {
+            "advertisingId": "T0T0T072-5e28-45a1-9eda-ce22a3e36d1a",
+            "id": "3f034872-5e28-45a1-9eda-ce22a3e36d1a",
+            "manufacturer": "Google",
+            "name": "generic_x86_arm",
+            "type": "ios",
+            "attTrackingStatus": 3
+          },
+          "library": {
+            "name": "RudderLabs JavaScript SDK",
+            "version": "1.0.0"
+          },
+          "locale": "en-US",
+          "os": {
+            "name": "iOS",
+            "version": "14.4.1"
+          },
+          "screen": {
+            "density": 2
+          },
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+        },
+        "type": "track",
+        "event": "Product Added to Cart",
+        "properties": {
+          "query": "t-shirts",
+          "event_conversion_type": "web"
+        },
+        "integrations": {
+          "All": true
+        },
+        "sentAt": "2022-04-22T10:57:58Z"
+      },
+      "metadata": {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      },
+      "destination": {
+        "ID": "snapchat-conversion-destination-id",
+        "Name": "SNAPCHAT_CONVERSION",
+        "DestinationDefinition": {
+          "ID": "123",
+          "Name": "SNAPCHAT_CONVERSION",
+          "DisplayName": "Snapchat Conversion",
+          "Config": {
+            "cdkV2Enabled": false
+          }
+        },
+        "Config": {
+          "apiKey": "snapchat_conversion1",
+          "pixelId": "dummyPixelId",
+          "apiVersion": "newApi",
+          "rudderEventsToSnapEvents": [
+            {
+              "from": "Product_Added_To_Cart",
+              "to": "products_searched"
+            }
+          ]
+        },
+        "Enabled": true,
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
