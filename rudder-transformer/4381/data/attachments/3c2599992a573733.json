@@ -1,0 +1,46 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://staging.example.com/v1/events",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "env-test@example.com",
+            "name": "Environment Test User"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 999,
+      "attemptNum": 1,
+      "userId": "env-test",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
