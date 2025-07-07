@@ -1,0 +1,13 @@
+{
+  "output": {
+    "status": 200,
+    "message": "[TIKTOK_ADS Response Handler] - Request Processed Successfully",
+    "destinationResponse": {
+      "response": {
+        "code": 0,
+        "message": "OK"
+      },
+      "status": 200
+    }
+  }
+}
