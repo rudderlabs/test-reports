@@ -1,0 +1,152 @@
+{
+  "body": {
+    "input": [
+      {
+        "destination": {
+          "Config": {
+            "apiKey": "ps_test_api_key"
+          },
+          "DestinationDefinition": {
+            "DisplayName": "Postscript",
+            "ID": "ps-123",
+            "Name": "POSTSCRIPT",
+            "Config": {
+              "cdkV2Enabled": false
+            }
+          },
+          "Enabled": true,
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id"
+        },
+        "message": {
+          "type": "track",
+          "channel": "server",
+          "event": "Custom Event 1",
+          "properties": {
+            "customProp1": "value1",
+            "customProp2": "value2"
+          },
+          "context": {
+            "externalId": [
+              {
+                "type": "subscriber_id",
+                "id": "sub_12345"
+              }
+            ]
+          },
+          "originalTimestamp": "2025-06-20T00:00:00.000Z"
+        },
+        "metadata": {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      },
+      {
+        "destination": {
+          "Config": {
+            "apiKey": "ps_test_api_key"
+          },
+          "DestinationDefinition": {
+            "DisplayName": "Postscript",
+            "ID": "ps-123",
+            "Name": "POSTSCRIPT",
+            "Config": {
+              "cdkV2Enabled": false
+            }
+          },
+          "Enabled": true,
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id"
+        },
+        "message": {
+          "type": "track",
+          "channel": "server",
+          "event": "Custom Event 2",
+          "properties": {
+            "customProp3": "value3",
+            "customProp4": "value4"
+          },
+          "context": {
+            "traits": {
+              "email": "customer@example.com"
+            }
+          },
+          "originalTimestamp": "2025-06-20T00:00:00.000Z"
+        },
+        "metadata": {
+          "jobId": 2,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      },
+      {
+        "destination": {
+          "Config": {
+            "apiKey": "ps_test_api_key"
+          },
+          "DestinationDefinition": {
+            "DisplayName": "Postscript",
+            "ID": "ps-123",
+            "Name": "POSTSCRIPT",
+            "Config": {
+              "cdkV2Enabled": false
+            }
+          },
+          "Enabled": true,
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id"
+        },
+        "message": {
+          "type": "track",
+          "channel": "server",
+          "event": "Custom Event 3",
+          "properties": {
+            "customProp5": "value5",
+            "customProp6": "value6"
+          },
+          "context": {
+            "traits": {
+              "phone": "+1111111111"
+            }
+          },
+          "originalTimestamp": "2025-06-20T00:00:00.000Z"
+        },
+        "metadata": {
+          "jobId": 3,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      }
+    ],
+    "destType": "postscript"
+  },
+  "method": "POST"
+}
