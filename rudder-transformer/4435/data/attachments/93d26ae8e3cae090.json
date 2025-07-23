@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "[Attentive Tag]: SignUp Source Id is required for subscribe event",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "configuration",
+      "destType": "ATTENTIVE_TAG",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
