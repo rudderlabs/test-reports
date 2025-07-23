@@ -1,0 +1,137 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://endpoint1.com",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-API-Key": "app-id-1"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "test@example.com",
+            "name": "Test User"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 8,
+      "attemptNum": 1,
+      "userId": "u8",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  },
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://endpoint2.com",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-API-Key": "app-id-2"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "test@example.com",
+            "name": "Test User"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 9,
+      "attemptNum": 1,
+      "userId": "u9",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  },
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://endpoint3.com",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-API-Key": "app-id-3"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "action": "insert",
+          "fields": {
+            "email": "test@example.com",
+            "name": "Test User"
+          },
+          "identifiers": {
+            "userId": "user123"
+          },
+          "recordId": "record123",
+          "timestamp": "2023-01-01T00:00:00.000Z"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 10,
+      "attemptNum": 1,
+      "userId": "u10",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
