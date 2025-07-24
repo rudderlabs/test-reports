@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "No Spread Sheet set for this event",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "configuration",
+      "destType": "GOOGLESHEETS",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
