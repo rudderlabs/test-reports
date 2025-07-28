@@ -1,0 +1,102 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://api.attentivemobile.com/v1/identity-resolution/user-identifiers",
+      "headers": {
+        "Authorization": "Bearer commonApiKey",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "phone": "+10000000000",
+          "email": "test@gmail.com",
+          "clientUserId": "144",
+          "shopifyId": "224",
+          "klaviyoId": "132",
+          "customIdentifiers": [
+            {
+              "name": "customIdentifier-1",
+              "value": "customValue-1"
+            }
+          ]
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  },
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://api.attentivemobile.com/v1/attributes/custom",
+      "headers": {
+        "Authorization": "Bearer commonApiKey",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "user": {
+            "email": "test@gmail.com",
+            "phone": "+10000000000",
+            "externalIdentifiers": {
+              "clientUserId": "144",
+              "customIdentifiers": [
+                {
+                  "name": "customIdentifier-1",
+                  "value": "customValue-1"
+                }
+              ]
+            }
+          },
+          "properties": {
+            "firstName": "John",
+            "lastName": "Doe",
+            "city": "New York City",
+            "country": "USA"
+          }
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
