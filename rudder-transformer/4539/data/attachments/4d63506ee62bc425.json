@@ -1,0 +1,91 @@
+{
+  "output": [
+    {
+      "batchedRequest": {
+        "body": {
+          "JSON": {
+            "ids": [
+              "string-id-1",
+              12345,
+              "string-id-2"
+            ]
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://track.customer.io/api/v1/segments/test-segment-id/add_customers",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Basic Y3VzdG9tZXJpb19hdWRpZW5jZTE6Y3VzdG9tZXJpb19hdWRpZW5jZTI="
+        },
+        "params": {
+          "id_type": "id"
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        },
+        {
+          "jobId": 2,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        },
+        {
+          "jobId": 3,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": true,
+      "statusCode": 200,
+      "destination": {
+        "Config": {
+          "apiKey": "customerio_audience2",
+          "appApiKey": "test-app-api-key",
+          "connectionMode": "cloud",
+          "siteId": "customerio_audience1"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Customer.io Audience",
+          "ID": "123",
+          "Name": "CUSTOMERIO_AUDIENCE",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "123",
+        "Name": "CUSTOMERIO_AUDIENCE",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
