@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "jobId": 3,
+      "attemptNum": 1,
+      "userId": "u3",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "Message type \"track\" is not supported. Only 'record' type is supported.",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "instrumentation",
+      "destType": "RUDDER_TEST",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    }
+  }
+]
