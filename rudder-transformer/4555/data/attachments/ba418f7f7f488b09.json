@@ -1,0 +1,74 @@
+{
+  "output": [
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://api.postscript.io/api/v2/subscribers",
+        "headers": {
+          "Content-type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer ps_test_api_key",
+          "X-Postscript-Partner-Key": "ps_partner_api_key"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "email": "john.doe@example.com",
+            "phone_number": "+1234567890",
+            "keyword": "WELCOME",
+            "tags": [
+              "premium",
+              "customer"
+            ],
+            "origin": "other",
+            "shopify_customer_id": 12345,
+            "properties": {
+              "customStringProperty": "customValue",
+              "customIntProperty": 101
+            }
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "Config": {
+          "apiKey": "ps_test_api_key"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Postscript",
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Config": {
+            "cdkV2Enabled": false
+          }
+        },
+        "Enabled": true,
+        "ID": "ps-123",
+        "Name": "POSTSCRIPT",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
