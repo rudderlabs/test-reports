@@ -1,0 +1,119 @@
+{
+  "method": "POST",
+  "body": {
+    "input": [
+      {
+        "destination": {
+          "ID": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+          "Name": "test-slack",
+          "DestinationDefinition": {
+            "ID": "1ZQUiJVMlmF7lfsdfXg7KXQnlLV",
+            "Name": "SLACK",
+            "DisplayName": "Slack",
+            "Config": {
+              "excludeKeys": [],
+              "includeKeys": []
+            }
+          },
+          "Enabled": true,
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id",
+          "IsrouterEnabled": true,
+          "Config": {
+            "eventChannelSettings": [
+              {
+                "eventChannel": "#slack_integration",
+                "eventName": "is",
+                "eventRegex": true
+              },
+              {
+                "eventChannel": "",
+                "eventName": "",
+                "eventRegex": false
+              },
+              {
+                "eventChannel": "",
+                "eventName": "",
+                "eventRegex": false
+              }
+            ],
+            "eventTemplateSettings": [
+              {
+                "eventName": "is",
+                "eventRegex": true,
+                "eventTemplate": "{{name}} performed {{event}} with {{properties.key1}} {{properties.key2}}"
+              },
+              {
+                "eventName": "",
+                "eventRegex": false,
+                "eventTemplate": ""
+              }
+            ],
+            "webhookUrl": "https://hooks.slack.com/services/THZM86VSS/BV9HZ2UN6/demo",
+            "whitelistedTraitsSettings": [
+              {
+                "trait": "hiji"
+              },
+              {
+                "trait": ""
+              }
+            ],
+            "identifyTemplate": "identified {{name}} with {{traits}}"
+          }
+        },
+        "message": {
+          "anonymousId": "12345",
+          "channel": "web",
+          "context": {
+            "page": {
+              "path": "",
+              "referrer": "",
+              "search": "",
+              "title": "",
+              "url": ""
+            }
+          },
+          "integrations": {
+            "All": true
+          },
+          "messageId": "4aaecff2-a513-4bbf-9824-c471f4ac9777",
+          "originalTimestamp": "2020-03-23T03:41:46.122Z",
+          "properties": {
+            "path": "/tests/html/script-test.html",
+            "referrer": "http://localhost:1111/tests/html/",
+            "search": "",
+            "title": "",
+            "url": "http://localhost:1111/tests/html/script-test.html"
+          },
+          "receivedAt": "2020-03-23T09:11:46.244+05:30",
+          "request_ip": "[::1]:52055",
+          "sentAt": "2020-03-23T03:41:46.123Z",
+          "timestamp": "2020-03-23T09:11:46.243+05:30",
+          "type": "identify",
+          "userId": "12345",
+          "traits": {
+            "country": "USA",
+            "email": "test@domain.com",
+            "hiji": "hulala-1",
+            "name": "my-name-1"
+          }
+        },
+        "metadata": {
+          "jobId": 123,
+          "attemptNum": 1,
+          "userId": "u1",
+          "sourceId": "1YhwKyDcKstudlGxkeN5p2wgsrp",
+          "destinationId": "1ZQVSU9SXNg6KYgZALaqjAO3PIL",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false,
+          "messageId": "4aaecff2-a513-4bbf-9824-c471f4ac9777",
+          "destinationType": "SLACK"
+        }
+      }
+    ],
+    "destType": "slack"
+  }
+}
