@@ -1,0 +1,113 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "anonymousId": "21e13f4bc7ceddad",
+        "channel": "web",
+        "context": {
+          "app": {
+            "build": "1.0.0",
+            "name": "RudderLabs JavaScript SDK",
+            "namespace": "com.rudderlabs.javascript",
+            "version": "1.0.0"
+          },
+          "library": {
+            "name": "RudderLabs JavaScript SDK",
+            "version": "1.0.0"
+          },
+          "userAgent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+          "locale": "en-US",
+          "ip": "13.57.97.131",
+          "os": {
+            "name": "",
+            "version": ""
+          },
+          "screen": {
+            "density": 2
+          },
+          "externalId": [
+            {
+              "type": "tiktokExternalId",
+              "id": "1234"
+            }
+          ]
+        },
+        "messageId": "84e26acc-56a5-4835-8233-591137fca468",
+        "session_id": "3049dc4c-5a95-4ccd-a3e7-d74a7e411f22",
+        "originalTimestamp": "2019-10-14T09:03:17.562Z",
+        "timestamp": "2020-09-17T19:49:27Z",
+        "type": "track",
+        "event": "SubscriBe",
+        "properties": {
+          "eventId": "1616318632825_357",
+          "testEventCode": "",
+          "context": {
+            "page": {
+              "url": "http://demo.mywebsite.com/purchase",
+              "referrer": "http://demo.mywebsite.com"
+            },
+            "user": {
+              "phone_number": "+868987675687",
+              "email": "sample@sample.com"
+            }
+          },
+          "contents": [
+            {
+              "price": 8,
+              "quantity": 2,
+              "content_type": "socks",
+              "content_id": "1077218"
+            },
+            {
+              "price": 30,
+              "quantity": 1,
+              "content_type": "dress",
+              "content_id": "1197218"
+            }
+          ],
+          "currency": "USD",
+          "value": 46
+        },
+        "integrations": {
+          "All": true
+        },
+        "sentAt": "2019-10-14T09:03:22.563Z"
+      },
+      "metadata": {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      },
+      "destination": {
+        "ID": "default-destination-id",
+        "Name": "Default Destination",
+        "DestinationDefinition": {
+          "ID": "default-dest-def-id",
+          "Name": "Default Destination Definition",
+          "DisplayName": "Default Display Name",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "default-workspaceId",
+        "Transformations": [],
+        "RevisionID": "default-revision",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "accessToken": "dummyAccessToken",
+          "pixelCode": "{{PIXEL-CODE}}",
+          "hashUserProperties": true
+        },
+        "hasDynamicConfig": false
+      }
+    }
+  ]
+}
