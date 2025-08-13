@@ -1,0 +1,73 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://business-api.tiktok.com/open_api/v1.3/pixel/track/",
+      "headers": {
+        "Access-Token": "dummyAccessToken",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "pixel_code": "{{PIXEL-CODE}}",
+          "event": "Subscribe",
+          "event_id": "1616318632825_357",
+          "timestamp": "2020-09-17T19:49:27Z",
+          "properties": {
+            "contents": [
+              {
+                "price": 8,
+                "quantity": 2,
+                "content_type": "socks",
+                "content_id": "1077218"
+              },
+              {
+                "price": 30,
+                "quantity": 1,
+                "content_type": "dress",
+                "content_id": "1197218"
+              }
+            ],
+            "currency": "USD",
+            "value": 46
+          },
+          "context": {
+            "page": {
+              "url": "http://demo.mywebsite.com/purchase",
+              "referrer": "http://demo.mywebsite.com"
+            },
+            "user": {
+              "phone_number": "1d96e70d2bf54087e33586457cde2790825bee7b1a3b05d26481cb12ec8e63fd",
+              "email": "774efc08cebab8c50c0f0eb2d3a2d2e560872a64f6c1617314c4f03b1c3d4dfa",
+              "external_id": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+            },
+            "ip": "13.57.97.131",
+            "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion"
+          },
+          "partner_name": "RudderStack"
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
