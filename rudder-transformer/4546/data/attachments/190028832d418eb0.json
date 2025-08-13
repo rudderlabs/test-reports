@@ -1,0 +1,40 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://api.attentivemobile.com/v1/subscriptions/unsubscribe",
+      "headers": {
+        "Authorization": "Bearer commonApiKey",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "user": {
+            "email": "test@gmail.com"
+          }
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
