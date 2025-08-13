@@ -1,0 +1,34 @@
+{
+  "output": {
+    "response": [
+      {
+        "error": "{\"error\":{\"type\":\"rate_limit_error\",\"message\":\"Too many requests. Please try again later.\",\"code\":\"rate_limit_exceeded\"}}",
+        "statusCode": 429,
+        "metadata": {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "sourceId": "default-sourceId",
+          "secret": {
+            "apiKey": "ps_test_api_key_12345"
+          },
+          "dontBatch": false
+        }
+      }
+    ],
+    "statTags": {
+      "errorCategory": "network",
+      "errorType": "throttled",
+      "destType": "POSTSCRIPT",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "dataDelivery",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId"
+    },
+    "message": "[POSTSCRIPT] Rate limit exceeded",
+    "status": 429
+  }
+}
