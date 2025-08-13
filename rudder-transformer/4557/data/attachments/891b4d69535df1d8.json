@@ -1,0 +1,49 @@
+[
+  {
+    "metadata": {
+      "sourceId": "1pe7ty3hMMQCnrfZ0Mn2QG48884",
+      "workspaceId": "default-workspace",
+      "namespace": "default-namespace",
+      "instanceId": "default-instance",
+      "sourceType": "default-source-type",
+      "sourceCategory": "default-category",
+      "trackingPlanId": "default-tracking-plan",
+      "trackingPlanVersion": 1,
+      "sourceTpConfig": {},
+      "mergedTpConfig": {},
+      "destinationId": "1pe9WgFOuFHOSIfmUkkhVTD1Rsd",
+      "jobRunId": "default-job-run",
+      "jobId": 1,
+      "sourceBatchId": "default-batch",
+      "sourceJobId": "default-source-job",
+      "sourceJobRunId": "default-source-job-run",
+      "sourceTaskId": "default-task",
+      "sourceTaskRunId": "default-task-run",
+      "recordId": {},
+      "destinationType": "PERSONALIZE",
+      "messageId": "4bb69e26-b5a6-446a-a140-dbb6263369c9",
+      "oauthAccessToken": "default-token",
+      "messageIds": [],
+      "rudderId": "daf823fb-e8d3-413a-8313-d34cd756f968",
+      "receivedAt": "2021-03-13T01:56:44.340+05:30",
+      "eventName": "default-event",
+      "eventType": "default-type",
+      "sourceDefinitionId": "default-source-def",
+      "destinationDefinitionId": "default-dest-def",
+      "transformationId": "default-transform",
+      "dontBatch": false
+    },
+    "statusCode": 400,
+    "error": "This Message Type does not support PutItems. Aborting message",
+    "statTags": {
+      "errorCategory": "dataValidation",
+      "errorType": "configuration",
+      "destType": "PERSONALIZE",
+      "module": "destination",
+      "implementation": "native",
+      "feature": "processor",
+      "destinationId": "1pe9WgFOuFHOSIfmUkkhVTD1Rsd",
+      "workspaceId": "default-workspace"
+    }
+  }
+]
