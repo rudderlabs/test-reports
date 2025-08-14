@@ -1,0 +1,49 @@
+{
+  "body": {
+    "version": "v1",
+    "type": "REST",
+    "userId": "default-userId",
+    "method": "POST",
+    "endpoint": "https://api.postscript.io/api/v2/subscribers",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ps_test_api_key_12345",
+      "X-Postscript-Partner-Key": "partner_api_key_12345"
+    },
+    "params": {},
+    "body": {
+      "JSON": {
+        "phone_number": "+1234567890",
+        "email": "server_error_test@example.com",
+        "first_name": "Server",
+        "last_name": "Error",
+        "keyword": "SERVER_ERROR",
+        "tags": [
+          "server-error-test"
+        ],
+        "origin": "api"
+      },
+      "JSON_ARRAY": {},
+      "XML": {},
+      "FORM": {},
+      "GZIP": {}
+    },
+    "files": {},
+    "metadata": [
+      {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "sourceId": "default-sourceId",
+        "secret": {
+          "apiKey": "ps_test_api_key_12345"
+        },
+        "dontBatch": false
+      }
+    ],
+    "destinationConfig": {}
+  },
+  "method": "POST"
+}
