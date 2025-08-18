@@ -1,0 +1,76 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "channel": "web",
+        "context": {
+          "traits": {
+            "email": "test@gmail.com",
+            "phone": "+10000000000"
+          },
+          "externalId": [
+            {
+              "type": "clientUserId",
+              "id": "sub123"
+            }
+          ]
+        },
+        "type": "track",
+        "properties": {
+          "signUpSourceId": "241654",
+          "channelConsents": [
+            {
+              "channel": "sms",
+              "consented": false
+            },
+            {
+              "channel": "email",
+              "consented": false
+            }
+          ]
+        },
+        "event": "subscription_event",
+        "anonymousId": "00000000000000000000000000",
+        "userId": "123456",
+        "integrations": {
+          "All": true,
+          "attentive_tag": {
+            "signUpSourceId": "241654"
+          }
+        }
+      },
+      "metadata": {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      },
+      "destination": {
+        "ID": "ATTENTIVE_TAG",
+        "Name": "Attentive Tag Destination",
+        "DestinationDefinition": {
+          "ID": "ATTENTIVE_TAG",
+          "Name": "Attentive Tag",
+          "DisplayName": "Attentive Tag",
+          "Config": {}
+        },
+        "Config": {
+          "apiKey": "commonApiKey",
+          "signUpSourceId": "241654",
+          "enableNewIdentifyFlow": true
+        },
+        "Enabled": true,
+        "WorkspaceID": "attentive-workspace",
+        "Transformations": [],
+        "RevisionID": "attentive-revision"
+      }
+    }
+  ]
+}
