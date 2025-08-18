@@ -1,0 +1,52 @@
+{
+  "body": {
+    "version": "v1",
+    "type": "REST",
+    "userId": "default-userId",
+    "method": "POST",
+    "endpoint": "https://api.postscript.io/api/v2/custom-events",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ps_test_api_key_12345",
+      "X-Postscript-Partner-Key": "partner_api_key_12345"
+    },
+    "params": {},
+    "body": {
+      "JSON": {
+        "type": "Purchase Completed",
+        "subscriber_id": "sub_12345",
+        "occurred_at": "2025-01-15T10:00:00.000Z",
+        "properties": {
+          "order_id": "order_123",
+          "total_amount": 99.99,
+          "currency": "USD",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "JSON_ARRAY": {},
+      "XML": {},
+      "FORM": {},
+      "GZIP": {}
+    },
+    "files": {},
+    "metadata": [
+      {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "sourceId": "default-sourceId",
+        "secret": {
+          "apiKey": "ps_test_api_key_12345"
+        },
+        "dontBatch": false
+      }
+    ],
+    "destinationConfig": {}
+  },
+  "method": "POST"
+}
