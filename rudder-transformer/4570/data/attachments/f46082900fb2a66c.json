@@ -1,0 +1,60 @@
+{
+  "body": {
+    "input": [
+      {
+        "destination": {
+          "Config": {
+            "apiKey": "ps_test_api_key"
+          },
+          "DestinationDefinition": {
+            "DisplayName": "Postscript",
+            "ID": "ps-123",
+            "Name": "POSTSCRIPT",
+            "Config": {
+              "cdkV2Enabled": false
+            }
+          },
+          "Enabled": true,
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Transformations": [],
+          "WorkspaceID": "test-workspace-id"
+        },
+        "message": {
+          "type": "track",
+          "userId": "user123",
+          "properties": {
+            "customProp1": "value1"
+          },
+          "context": {
+            "library": {
+              "name": "rudderstack",
+              "version": "1.0.0"
+            },
+            "externalId": [
+              {
+                "type": "subscriber_id",
+                "id": "sub_12345"
+              }
+            ]
+          },
+          "timestamp": "2025-06-23T10:00:00.000Z"
+        },
+        "metadata": {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      }
+    ],
+    "destType": "postscript"
+  },
+  "method": "POST"
+}
