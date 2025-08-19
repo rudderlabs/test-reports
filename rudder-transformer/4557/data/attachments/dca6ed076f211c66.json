@@ -1,0 +1,67 @@
+{
+  "method": "POST",
+  "body": [
+    {
+      "message": {
+        "anonymousId": "4eb021e9-a2af-4926-ae82-fe996d12f3c5",
+        "channel": "web",
+        "context": {
+          "locale": "en-GB",
+          "os": {
+            "name": "",
+            "version": ""
+          },
+          "traits": {
+            "company": {
+              "id": "abc123"
+            },
+            "createdAt": "Thu Mar 24 2016 17:46:45 GMT+0000 (UTC)",
+            "email": "test0@gmail.com",
+            "phone": "+16465453911"
+          },
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36"
+        },
+        "integrations": {
+          "All": true,
+          "attentive_tag": {
+            "signUpSourceId": "241654",
+            "identifyOperation": "subscribe"
+          }
+        },
+        "messageId": "e108eb05-f6cd-4624-ba8c-568f2e2b3f92",
+        "receivedAt": "2023-10-14T13:56:14.945+05:30",
+        "type": "identify"
+      },
+      "metadata": {
+        "jobId": 1,
+        "attemptNum": 1,
+        "userId": "default-userId",
+        "sourceId": "default-sourceId",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId",
+        "secret": {
+          "accessToken": "commonAccessToken"
+        },
+        "dontBatch": false
+      },
+      "destination": {
+        "ID": "ATTENTIVE_TAG",
+        "Name": "Attentive Tag Destination",
+        "DestinationDefinition": {
+          "ID": "ATTENTIVE_TAG",
+          "Name": "Attentive Tag",
+          "DisplayName": "Attentive Tag",
+          "Config": {}
+        },
+        "Config": {
+          "apiKey": "commonApiKey",
+          "signUpSourceId": "241654"
+        },
+        "Enabled": true,
+        "WorkspaceID": "attentive-workspace",
+        "Transformations": [],
+        "RevisionID": "attentive-revision"
+      }
+    }
+  ]
+}
