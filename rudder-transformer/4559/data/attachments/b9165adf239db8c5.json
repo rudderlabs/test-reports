@@ -1,0 +1,50 @@
+[
+  {
+    "output": {
+      "version": "1",
+      "type": "REST",
+      "method": "POST",
+      "endpoint": "https://api.attentivemobile.com/v1/subscriptions",
+      "headers": {
+        "Authorization": "Bearer commonApiKey",
+        "Content-Type": "application/json"
+      },
+      "params": {},
+      "body": {
+        "JSON": {
+          "user": {
+            "phone": "+16405273911",
+            "email": "a@gmail.com"
+          },
+          "signUpSourceId": "241654",
+          "externalIdentifiers": {
+            "customIdentifiers": [
+              {
+                "name": "string",
+                "value": "string"
+              }
+            ]
+          }
+        },
+        "JSON_ARRAY": {},
+        "XML": {},
+        "FORM": {}
+      },
+      "files": {},
+      "userId": ""
+    },
+    "metadata": {
+      "jobId": 1,
+      "attemptNum": 1,
+      "userId": "default-userId",
+      "sourceId": "default-sourceId",
+      "destinationId": "default-destinationId",
+      "workspaceId": "default-workspaceId",
+      "secret": {
+        "accessToken": "commonAccessToken"
+      },
+      "dontBatch": false
+    },
+    "statusCode": 200
+  }
+]
