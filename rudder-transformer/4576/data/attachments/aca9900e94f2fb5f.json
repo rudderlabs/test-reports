@@ -1,0 +1,196 @@
+{
+  "output": [
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://api.postscript.io/api/v2/events",
+        "headers": {
+          "Content-type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer ps_test_api_key",
+          "X-Postscript-Partner-Key": "ps_partner_api_key"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "type": "Custom Event 1",
+            "occurred_at": "2025-06-20 00:00:00.000",
+            "subscriber_id": "sub_12345",
+            "properties": {
+              "customProp1": "value1",
+              "customProp2": "value2"
+            }
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "Config": {
+          "apiKey": "ps_test_api_key"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Postscript",
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Config": {
+            "cdkV2Enabled": false
+          }
+        },
+        "Enabled": true,
+        "ID": "ps-123",
+        "Name": "POSTSCRIPT",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    },
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://api.postscript.io/api/v2/events",
+        "headers": {
+          "Content-type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer ps_test_api_key",
+          "X-Postscript-Partner-Key": "ps_partner_api_key"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "type": "Custom Event 2",
+            "email": "customer@example.com",
+            "occurred_at": "2025-06-20 00:00:00.000",
+            "properties": {
+              "customProp3": "value3",
+              "customProp4": "value4"
+            }
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 2,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "Config": {
+          "apiKey": "ps_test_api_key"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Postscript",
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Config": {
+            "cdkV2Enabled": false
+          }
+        },
+        "Enabled": true,
+        "ID": "ps-123",
+        "Name": "POSTSCRIPT",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    },
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://api.postscript.io/api/v2/events",
+        "headers": {
+          "Content-type": "application/json",
+          "Accept": "application/json",
+          "Authorization": "Bearer ps_test_api_key",
+          "X-Postscript-Partner-Key": "ps_partner_api_key"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "type": "Custom Event 3",
+            "phone": "+1111111111",
+            "occurred_at": "2025-06-20 00:00:00.000",
+            "properties": {
+              "customProp5": "value5",
+              "customProp6": "value6"
+            }
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 3,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "Config": {
+          "apiKey": "ps_test_api_key"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Postscript",
+          "ID": "ps-123",
+          "Name": "POSTSCRIPT",
+          "Config": {
+            "cdkV2Enabled": false
+          }
+        },
+        "Enabled": true,
+        "ID": "ps-123",
+        "Name": "POSTSCRIPT",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
