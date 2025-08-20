@@ -1,0 +1,148 @@
+{
+  "output": [
+    {
+      "metadata": [
+        {
+          "jobId": 1,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 400,
+      "error": "audienceId: String must contain at least 1 character(s); identifierMappings: Required",
+      "statTags": {
+        "errorCategory": "dataValidation",
+        "errorType": "configuration",
+        "destType": "CUSTOMERIO_AUDIENCE",
+        "module": "destination",
+        "implementation": "native",
+        "feature": "router",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId"
+      },
+      "destination": {
+        "Config": {
+          "apiKey": "customerio_audience2",
+          "appApiKey": "test-app-api-key",
+          "connectionMode": "cloud",
+          "siteId": "customerio_audience1"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Customer.io Audience",
+          "ID": "123",
+          "Name": "CUSTOMERIO_AUDIENCE",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "123",
+        "Name": "CUSTOMERIO_AUDIENCE",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    },
+    {
+      "metadata": [
+        {
+          "jobId": 2,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 400,
+      "error": "audienceId: String must contain at least 1 character(s); identifierMappings: Required",
+      "statTags": {
+        "errorCategory": "dataValidation",
+        "errorType": "configuration",
+        "destType": "CUSTOMERIO_AUDIENCE",
+        "module": "destination",
+        "implementation": "native",
+        "feature": "router",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId"
+      },
+      "destination": {
+        "Config": {
+          "apiKey": "customerio_audience2",
+          "appApiKey": "test-app-api-key",
+          "connectionMode": "cloud",
+          "siteId": "customerio_audience1"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Customer.io Audience",
+          "ID": "123",
+          "Name": "CUSTOMERIO_AUDIENCE",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "123",
+        "Name": "CUSTOMERIO_AUDIENCE",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    },
+    {
+      "metadata": [
+        {
+          "jobId": 3,
+          "attemptNum": 1,
+          "userId": "default-userId",
+          "sourceId": "default-sourceId",
+          "destinationId": "default-destinationId",
+          "workspaceId": "default-workspaceId",
+          "secret": {
+            "accessToken": "commonAccessToken"
+          },
+          "dontBatch": false
+        }
+      ],
+      "batched": false,
+      "statusCode": 400,
+      "error": "identifierMappings: Required",
+      "statTags": {
+        "errorCategory": "dataValidation",
+        "errorType": "configuration",
+        "destType": "CUSTOMERIO_AUDIENCE",
+        "module": "destination",
+        "implementation": "native",
+        "feature": "router",
+        "destinationId": "default-destinationId",
+        "workspaceId": "default-workspaceId"
+      },
+      "destination": {
+        "Config": {
+          "apiKey": "customerio_audience2",
+          "appApiKey": "test-app-api-key",
+          "connectionMode": "cloud",
+          "siteId": "customerio_audience1"
+        },
+        "DestinationDefinition": {
+          "DisplayName": "Customer.io Audience",
+          "ID": "123",
+          "Name": "CUSTOMERIO_AUDIENCE",
+          "Config": {}
+        },
+        "Enabled": true,
+        "ID": "123",
+        "Name": "CUSTOMERIO_AUDIENCE",
+        "Transformations": [],
+        "WorkspaceID": "test-workspace-id"
+      }
+    }
+  ]
+}
