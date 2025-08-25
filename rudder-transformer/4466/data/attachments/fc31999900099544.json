@@ -1,0 +1,453 @@
+{
+  "output": [
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://business-api.tiktok.com/open_api/v1.3/event/track/",
+        "headers": {
+          "Access-Token": "dummyAccessToken",
+          "Content-Type": "application/json"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "event_source_id": "dummyPixelCode",
+            "event_source": "web",
+            "partner_name": "RudderStack",
+            "data": [
+              {
+                "event_id": "1616318632825_357",
+                "event_time": 1600372167,
+                "properties": {
+                  "contents": [
+                    {
+                      "price": 8,
+                      "quantity": 2,
+                      "content_type": "socks",
+                      "content_id": "1077218"
+                    },
+                    {
+                      "price": 30,
+                      "quantity": 1,
+                      "content_type": "dress",
+                      "content_id": "1197218"
+                    }
+                  ],
+                  "currency": "USD",
+                  "value": 46,
+                  "contents_ids": [
+                    "1077218",
+                    "1197218"
+                  ],
+                  "num_items": 2,
+                  "content_type": "product"
+                },
+                "page": {
+                  "url": "http://demo.mywebsite.com/purchase",
+                  "referrer": "http://demo.mywebsite.com"
+                },
+                "user": {
+                  "locale": "en-US",
+                  "email": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc",
+                  "phone": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+                  "ip": "13.57.97.131",
+                  "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+                  "external_id": "id5"
+                },
+                "event": "CompletePayment"
+              },
+              {
+                "event_id": "1616318632825_357",
+                "event_time": 1600372167,
+                "properties": {
+                  "contents": [
+                    {
+                      "price": 8,
+                      "quantity": 2,
+                      "content_type": "socks",
+                      "content_id": "1077218"
+                    },
+                    {
+                      "price": 30,
+                      "quantity": 1,
+                      "content_type": "dress",
+                      "content_id": "1197218"
+                    }
+                  ],
+                  "currency": "USD",
+                  "value": 46,
+                  "contents_ids": [
+                    "1077218",
+                    "1197218"
+                  ],
+                  "num_items": 2,
+                  "content_type": "product"
+                },
+                "page": {
+                  "url": "http://demo.mywebsite.com/purchase"
+                },
+                "user": {
+                  "locale": "en-US",
+                  "email": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc",
+                  "phone": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+                  "ip": "13.57.97.131",
+                  "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+                  "external_id": "id1"
+                },
+                "event": "CompletePayment"
+              },
+              {
+                "event_id": "1616318632825_357",
+                "event_time": 1600372167,
+                "properties": {
+                  "contents": [
+                    {
+                      "price": 8,
+                      "quantity": 2,
+                      "content_type": "socks",
+                      "content_id": "1077218"
+                    },
+                    {
+                      "price": 30,
+                      "quantity": 1,
+                      "content_type": "dress",
+                      "content_id": "1197218"
+                    }
+                  ],
+                  "currency": "USD",
+                  "value": 46,
+                  "contents_ids": [
+                    "1077218",
+                    "1197218"
+                  ],
+                  "num_items": 2
+                },
+                "page": {
+                  "url": "http://demo.mywebsite.com/purchase"
+                },
+                "user": {
+                  "locale": "en-US",
+                  "email": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc",
+                  "phone": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+                  "ip": "13.57.97.131",
+                  "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+                  "external_id": "id1"
+                },
+                "event": "download"
+              }
+            ]
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 1,
+          "userId": "u1"
+        },
+        {
+          "jobId": 3,
+          "userId": "u1"
+        }
+      ],
+      "batched": true,
+      "statusCode": 200,
+      "destination": {
+        "ID": "default-destination-id",
+        "Name": "Default Destination",
+        "DestinationDefinition": {
+          "ID": "default-dest-def-id",
+          "Name": "Default Destination Definition",
+          "DisplayName": "Default Display Name",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "default-workspaceId",
+        "Transformations": [],
+        "RevisionID": "default-revision",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "accessToken": "dummyAccessToken",
+          "pixelCode": "dummyPixelCode",
+          "hashUserProperties": false,
+          "version": "v2",
+          "eventsToStandard": [
+            {
+              "from": "addToCart",
+              "to": "CompletePayment"
+            },
+            {
+              "from": "addToCart",
+              "to": "download"
+            }
+          ]
+        },
+        "hasDynamicConfig": false
+      }
+    },
+    {
+      "metadata": [
+        {
+          "jobId": 2,
+          "userId": "u1"
+        }
+      ],
+      "batched": false,
+      "statusCode": 400,
+      "error": "Access Token not found. Aborting",
+      "statTags": {
+        "errorCategory": "dataValidation",
+        "errorType": "configuration",
+        "destType": "TIKTOK_ADS",
+        "module": "destination",
+        "implementation": "native",
+        "feature": "router"
+      },
+      "destination": {
+        "ID": "default-destination-id",
+        "Name": "Default Destination",
+        "DestinationDefinition": {
+          "ID": "default-dest-def-id",
+          "Name": "Default Destination Definition",
+          "DisplayName": "Default Display Name",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "default-workspaceId",
+        "Transformations": [],
+        "RevisionID": "default-revision",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "pixelCode": "dummyPixelCode",
+          "hashUserProperties": false,
+          "version": "v2",
+          "eventsToStandard": [
+            {
+              "from": "addToCart",
+              "to": "CompletePayment"
+            },
+            {
+              "from": "addToCart",
+              "to": "download"
+            }
+          ]
+        },
+        "hasDynamicConfig": false
+      }
+    },
+    {
+      "batchedRequest": [
+        {
+          "version": "1",
+          "type": "REST",
+          "method": "POST",
+          "endpoint": "https://business-api.tiktok.com/open_api/v1.3/event/track/",
+          "headers": {
+            "Access-Token": "dummyAccessToken",
+            "Content-Type": "application/json"
+          },
+          "params": {},
+          "body": {
+            "JSON": {
+              "event_source": "web",
+              "event_source_id": "dummyPixelCode",
+              "partner_name": "RudderStack",
+              "test_event_code": "Some test event code for testing setup",
+              "data": [
+                {
+                  "event_id": "1616318632825_357",
+                  "event_time": 1600372167,
+                  "properties": {
+                    "contents": [
+                      {
+                        "price": 8,
+                        "quantity": 2,
+                        "content_type": "socks",
+                        "content_id": "1077218"
+                      },
+                      {
+                        "price": 30,
+                        "quantity": 1,
+                        "content_type": "dress",
+                        "content_id": "1197218"
+                      }
+                    ],
+                    "currency": "USD",
+                    "value": 46,
+                    "contents_ids": [
+                      "1077218",
+                      "1197218"
+                    ],
+                    "num_items": 2,
+                    "content_type": "product"
+                  },
+                  "page": {
+                    "url": "http://demo.mywebsite.com/purchase"
+                  },
+                  "user": {
+                    "locale": "en-US",
+                    "email": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc",
+                    "phone": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+                    "ip": "13.57.97.131",
+                    "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+                    "external_id": "id2"
+                  },
+                  "event": "CompletePayment"
+                }
+              ]
+            },
+            "JSON_ARRAY": {},
+            "XML": {},
+            "FORM": {}
+          },
+          "files": {}
+        }
+      ],
+      "metadata": [
+        {
+          "jobId": 4,
+          "userId": "u1"
+        }
+      ],
+      "batched": false,
+      "statusCode": 200,
+      "destination": {
+        "ID": "default-destination-id",
+        "Name": "Default Destination",
+        "DestinationDefinition": {
+          "ID": "default-dest-def-id",
+          "Name": "Default Destination Definition",
+          "DisplayName": "Default Display Name",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "default-workspaceId",
+        "Transformations": [],
+        "RevisionID": "default-revision",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "accessToken": "dummyAccessToken",
+          "pixelCode": "dummyPixelCode",
+          "hashUserProperties": false,
+          "version": "v2"
+        },
+        "hasDynamicConfig": false
+      }
+    },
+    {
+      "batchedRequest": {
+        "version": "1",
+        "type": "REST",
+        "method": "POST",
+        "endpoint": "https://business-api.tiktok.com/open_api/v1.3/event/track/",
+        "headers": {
+          "Access-Token": "dummyAccessToken",
+          "Content-Type": "application/json"
+        },
+        "params": {},
+        "body": {
+          "JSON": {
+            "event_source_id": "dummyPixelCode",
+            "event_source": "web",
+            "partner_name": "RudderStack",
+            "data": [
+              {
+                "event_id": "1616318632825_357",
+                "event_time": 1600372167,
+                "properties": {
+                  "contents": [
+                    {
+                      "price": 8,
+                      "quantity": 2,
+                      "content_type": "socks",
+                      "content_id": "1077218"
+                    },
+                    {
+                      "price": 30,
+                      "quantity": 1,
+                      "content_type": "dress",
+                      "content_id": "1197218"
+                    }
+                  ],
+                  "currency": "USD",
+                  "value": 46,
+                  "contents_ids": [
+                    "1077218",
+                    "1197218"
+                  ],
+                  "num_items": 2,
+                  "content_type": "product"
+                },
+                "page": {
+                  "url": "http://demo.mywebsite.com/purchase"
+                },
+                "user": {
+                  "locale": "en-US",
+                  "email": "f0e388f53921a51f0bb0fc8a2944109ec188b59172935d8f23020b1614cc44bc",
+                  "phone": "2f9d2b4df907e5c9a7b3434351b55700167b998a83dc479b825096486ffcf4ea",
+                  "ip": "13.57.97.131",
+                  "user_agent": "Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion",
+                  "external_id": "id4"
+                },
+                "event": "CompletePayment"
+              }
+            ]
+          },
+          "JSON_ARRAY": {},
+          "XML": {},
+          "FORM": {}
+        },
+        "files": {}
+      },
+      "metadata": [
+        {
+          "jobId": 5,
+          "userId": "u1"
+        }
+      ],
+      "batched": true,
+      "statusCode": 200,
+      "destination": {
+        "ID": "default-destination-id",
+        "Name": "Default Destination",
+        "DestinationDefinition": {
+          "ID": "default-dest-def-id",
+          "Name": "Default Destination Definition",
+          "DisplayName": "Default Display Name",
+          "Config": {}
+        },
+        "Enabled": true,
+        "WorkspaceID": "default-workspaceId",
+        "Transformations": [],
+        "RevisionID": "default-revision",
+        "IsProcessorEnabled": true,
+        "IsConnectionEnabled": true,
+        "Config": {
+          "accessToken": "dummyAccessToken",
+          "pixelCode": "dummyPixelCode",
+          "hashUserProperties": false,
+          "version": "v2",
+          "eventsToStandard": [
+            {
+              "from": "addToCart",
+              "to": "CompletePayment"
+            },
+            {
+              "from": "addToCart",
+              "to": "download"
+            }
+          ]
+        },
+        "hasDynamicConfig": false
+      }
+    }
+  ]
+}
